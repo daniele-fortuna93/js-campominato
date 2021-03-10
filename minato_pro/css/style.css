@@ -16,6 +16,14 @@ h2{
   font-size: 30px;
   margin-bottom: 20px;
 }
+h4{
+  font-size: 25px;
+  margin-top: 25px;
+}
+.difficult label{
+  font-size: 18px;
+  font-weight: 500;
+}
 /* typo */
 /* mix */
 .btn{
@@ -26,7 +34,7 @@ h2{
   color: grey;
   cursor: pointer; */
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -85,7 +93,7 @@ input[type="radio"]{
 .box_numero label{
   display: block;
   font-size: 20px;
-  margin: 20px;
+  margin: 35px 0 20px;
 }
 #numeroutente{
   background-color: transparent;
@@ -102,6 +110,12 @@ input[type="radio"]{
 }
 #verificanumero{
   margin-bottom: 15px;
+}
+#numeriinseriti li{
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .visible {
   display: inline-block;

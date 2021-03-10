@@ -33,6 +33,7 @@ var numeriComputer = []; // array numeri 'bomba'
 var numeriUtente = []; // array numeri inseriti dall'utente
 var y = 0; // variabile punteggio
 var risultato = document.getElementById('risultato');
+var numeriInseriti = document.getElementById('numeriinseriti');
 
 // 1. Scelta difficoltà
 
@@ -97,7 +98,9 @@ function () {
       } else {
         y++; // aggiorno variabile punteggio
         numeriUtente.push(numUtente); // aggiungo numero nell'array dei numeri inseriti dall'utente
+        numeriInseriti.innerHTML += "<li>" + numUtente + "</li>";
       }
+
     } else {
     alert("Inserisci un numero compreso tra 1 e " + totNumeri); // messaggio di inserimento numero non rispettante il range
     }
