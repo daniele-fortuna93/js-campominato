@@ -34,7 +34,7 @@ var numeriUtente = []; // array numeri inseriti dall'utente
 var y = 0; // variabile punteggio
 var risultato = document.getElementById('risultato');
 var numeriInseriti = document.getElementById('numeriinseriti');
-
+var numeriBomba = document.getElementById('numeribomba');
 // 1. Scelta difficoltà
 
 impostaDifficolta.addEventListener('click',
@@ -89,6 +89,7 @@ function () {
       if ( inArray(numeriComputer, numUtente )) { // controllo se il numero inserito è un numero bomba
         risultato.innerHTML = "Hai perso!" // stampo messaggio di sconfitta
         risultato.className = " visible red" // parte animazione sconfitta
+        numeriBomba.innerHTML = "Numeri bomba: " + numeriComputer;
         verificaNumero.classList.remove('btn_no-drop');
         numeroUtente.classList.remove('btn_no-drop');
         verificaNumero.disabled = true; // disabilito il tasto verifica numero

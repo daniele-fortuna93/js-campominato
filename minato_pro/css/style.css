@@ -18,7 +18,7 @@ h2{
 }
 h4{
   font-size: 25px;
-  margin-top: 25px;
+  margin: 25px 0;
 }
 .difficult label{
   font-size: 18px;
@@ -32,12 +32,6 @@ h4{
 /* typo */
 /* mix */
 .btn{
-  /* border-radius: 5px;
-  border: 1px solid grey;
-  padding: 10px;
-  background-color: transparent;
-  color: grey;
-  cursor: pointer; */
   display: inline-block;
   padding: 15px;
   font-size: 20px;
@@ -57,15 +51,14 @@ h4{
   cursor: no-drop;
 }
 .container{
-  padding: 30px 20px;
+  padding: 50px 20px 100px;
   background: #fcfff4;
   background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
   background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
   background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
   text-align: center;
-  position: relative;
-  height: 100vh;
+  height: 1000px;
 }
 header{
   display: flex;
@@ -122,6 +115,11 @@ input[type="radio"]{
   margin: 5px;
   font-size: 20px;
   font-weight: 500;
+}
+#risultato{
+  position: absolute;
+  top: 30%;
+  left: 40%;
 }
 .visible {
   display: inline-block;
