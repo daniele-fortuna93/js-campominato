@@ -68,6 +68,10 @@ function () {
   }
   console.log(totNumeri);
   console.log(numeriComputer);
+  if ( (verificaNumero.disabled == false) && (numeroUtente.disabled == false) ) {
+    verificaNumero.classList.remove('btn_no-drop');
+    numeroUtente.classList.remove('btn_no-drop');
+  }
 }
 );
 console.log(numeriComputer);
@@ -84,6 +88,8 @@ function () {
       if ( inArray(numeriComputer, numUtente )) { // controllo se il numero inserito è un numero bomba
         risultato.innerHTML = "Hai perso!" // stampo messaggio di sconfitta
         risultato.className = " visible red" // parte animazione sconfitta
+        verificaNumero.classList.remove('btn_no-drop');
+        numeroUtente.classList.remove('btn_no-drop');
         verificaNumero.disabled = true; // disabilito il tasto verifica numero
         numeroUtente.disabled = true; // disabilito input text
       } else if ( inArray(numeriUtente, numUtente)) { // controllo se il numero inserito dall'utente è gia stato inserito precedentemente
@@ -105,11 +111,3 @@ if ( y == (totNumeri - 16 )) { // controllo se l'utente ha vinto
 document.getElementById('punteggio').innerHTML = y; // stampo punteggio
 }
 );
-
-if ( (verificaNumero.disabled == false) && (numeroUtente.disabled == false) ) {
-  verificaNumero.classList.remove('btn_no-drop');
-  numeroUtente.classList.remove('btn_no-drop');
-} else {
-  verificaNumero.classList.add('btn_no-drop');
-  numeroUtente.classList.add('btn_no-drop');
-}

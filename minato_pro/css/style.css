@@ -6,11 +6,11 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
+  color: #2c3e50;
 }
 /* typo */
 h1{
   font-size: 60px;
-
 }
 h2{
   font-size: 30px;
@@ -52,9 +52,7 @@ h2{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
   text-align: center;
   position: relative;
-  margin: auto;
-  width: 1000px;
-  height: 800px;
+  height: 100vh;
 }
 header{
   display: flex;
@@ -68,7 +66,7 @@ header i {
 /* difficult */
 .difficult{
   width: 70%;
-  border: 5px solid black;
+  border: 5px solid #2c3e50;
   border-radius: 5px;
   margin: 30px auto;
   padding: 15px;
@@ -87,12 +85,12 @@ input[type="radio"]{
 .box_numero label{
   display: block;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 20px;
 }
 #numeroutente{
   background-color: transparent;
   border-radius: 5px;
-  border: none;
+  border: 5px solid #2c3e50;
   outline: none;
   box-shadow: none;
   display: block;
@@ -106,23 +104,17 @@ input[type="radio"]{
   margin-bottom: 15px;
 }
 .visible {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1;
+  display: inline-block;
   font-size: 80px;
   animation-name: molla;
-  animation-duration: 4s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 @keyframes molla {
       0%   {transform: scale(1.0);}
-      25%  {transform: scale(1.8);}
-      50%  {transform: scale(1.1);}
-      75%  {transform: scale(1.9);}
-      100% {transform: scale(1.4);}
+      50%  {transform: scale(2);}
+      100% {transform: scale(1.0);}
 }
 .red{
   color: red;
