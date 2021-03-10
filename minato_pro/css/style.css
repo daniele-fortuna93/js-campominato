@@ -1,0 +1,133 @@
+/* reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/* typo */
+h1{
+  font-size: 60px;
+
+}
+h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* typo */
+/* mix */
+.btn{
+  /* border-radius: 5px;
+  border: 1px solid grey;
+  padding: 10px;
+  background-color: transparent;
+  color: grey;
+  cursor: pointer; */
+  display: inline-block;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background: rgb(28,107,114) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: rgb(0,79,86);
+  user-select: none;
+  cursor: pointer;
+}
+.btn_no-drop{
+  cursor: no-drop;
+}
+.container{
+  padding: 30px 20px;
+  background: #fcfff4;
+  background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+  background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 800px;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+header i {
+  font-size: 80px;
+  color: red;
+  margin: 0 20px;
+}
+/* difficult */
+.difficult{
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 15px;
+}
+input[type="radio"]{
+  margin-right: 25px;
+}
+#impostadifficolta{
+  margin-left: 30px;
+}
+/* difficult */
+/* box_numero */
+.box_numero{
+  margin-top: 30px;
+}
+.box_numero label{
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#numeroutente{
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  width: 40%;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  margin: 10px auto;
+}
+#verificanumero{
+  margin-bottom: 15px;
+}
+.visible {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  font-size: 80px;
+  animation-name: molla;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes molla {
+      0%   {transform: scale(1.0);}
+      25%  {transform: scale(1.8);}
+      50%  {transform: scale(1.1);}
+      75%  {transform: scale(1.9);}
+      100% {transform: scale(1.4);}
+}
+.red{
+  color: red;
+
+}
+.green{
+  color: green;
+}

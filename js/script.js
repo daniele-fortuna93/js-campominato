@@ -49,13 +49,11 @@ if ( difficolta == "media" ) {
 console.log("Difficoltà impostata: " + (difficolta[0].toUpperCase() + difficolta.substring(1)) + ";" + " Numeri da 1 a " + totNumeri);
 // 1. Creo un array con i numeri 'bomba'
 var numeriComputer = [];
-var i = 0;
 var x;
-while ( i < 16 ) {
+while ( numeriComputer.length < 16 ) {
   x = numeroRandom(1, totNumeri);
   if ( !(inArray(numeriComputer, x)) ) {
     numeriComputer.push(x);
-    i++;
   }
 }
 console.log("Numeri bomba " + numeriComputer);

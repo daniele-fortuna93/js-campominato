@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- /google font -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Campo minato</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <i class="fas fa-bomb"></i>
+        <h1>Campo minato</h1>
+        <i class="fas fa-bomb"></i>
+      </header>
+      <div class="difficult">
+        <h2>Difficoltà</h2>
+        <label for="easy">Facile</label>
+        <input id="easy" type="radio" class="select" name="difficolta" value="100">
+        <label for="medium">Media</label>
+        <input id="medium" type="radio" class="select" name="difficolta" value="80">
+        <label for="hard">Difficile</label>
+        <input id="hard" type="radio" class="select" name="difficolta" value="50">
+        <button id="impostadifficolta" class="btn" type="button" name="button">Imposta difficoltà</button>
+      </div>
+      <div class="box_numero">
+        <label for="numeroutente"><span id="totalenumeri" ></span> </label>
+        <input id="numeroutente" type="text" name="" value="" placeholder="Inserisci un numero">
+        <button id="verificanumero" class="btn" type="button" name="button">Verifica numero</button>
+      </div>
+      <div class="statopartita">
+        <h3 id="risultato" ></h3>
+        <p>Punteggio attuale: <span id="punteggio">0</span> </p>
+      </div>
+
+      <script src="js/script.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
