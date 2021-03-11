@@ -58,7 +58,8 @@ h4{
   background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
   text-align: center;
-  height: 1000px;
+  height: 100vh;
+  overflow-y: auto;
 }
 header{
   display: flex;
